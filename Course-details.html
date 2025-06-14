@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReactJS Course Details</title>
+  <link rel="stylesheet" href="Assets/Course-details-ReactJS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__container">
+      <img src="Assets/Image/logo.png" alt="Logo" class="logo">
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="Courses.html">Courses</a>
+        <button class="btn btn--primary">Registered</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Course Quick Info -->
+    <section class="course-quick-info">
+      <div class="quick-info-left">
+        <span class="course-tag">FRONTEND</span>
+        <h1 class="course-title">ReactJS</h1>
+        <div class="quick-info-row">
+          <div class="quick-info-block">
+            <div class="quick-info-label">Opening day</div>
+            <div class="quick-info-value">28/02/2023</div>
+          </div>
+          <div class="quick-info-block">
+            <div class="quick-info-label">Time limit</div>
+            <div class="quick-info-value">45 spells</div>
+          </div>
+          <div class="quick-info-block">
+            <div class="quick-info-label">Learning form</div>
+            <div class="quick-info-value">Offline</div>
+          </div>
+        </div>
+        <div class="quick-info-teacher">
+          <img src="Assets/Image/avatar.png" alt="Jane Cooper">
+          <span>Jane Cooper</span>
+          <span class="quick-info-price">14.500.000 VND</span>
+        </div>
+        <button class="btn btn--primary quick-info-register">Register</button>
+      </div>
+      <div class="quick-info-right">
+        <img src="Assets/Image/ReactJS.png" alt="ReactJS">
+      </div>
+    </section>
+
+    <!-- Course Introduce -->
+    <section class="course-introduce">
+      <div class="introduce-grid">
+        <div class="introduce-row introduce-row--top">
+          <div class="introduce-desc-col">
+            <h2>Introduce</h2>
+            <p class="introduce-desc">This FRONTEND MASTER PROGRAMMING course is suitable for those of you who are IT students or those who want to become a comprehensive Front-end Dev to work in companies. After the course, you will have completed 5 projects like working and have full knowledge from basic to advanced of a Front-end Dev. In addition to the knowledge, you will accumulate a lot of experience in the process of studying and doing projects to easily apply successfully.After the course, you will have completed 5 projects like working and have full knowledge from basic to advanced of a Front-end Dev.</p>
+          </div>
+          <div class="introduce-video-col">
+            <div class="video-block">
+              <video controls poster="Assets/Image/video-image.png">
+                <source src="Assets/Video/reactjs-1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="introduce-row introduce-row--bottom">
+          <div class="introduce-video-col">
+            <div class="video-block">
+              <video controls poster="Assets/Image/video-image.png">
+                <source src="Assets/Video/reactjs-2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="introduce-steps-col">
+            <div class="introduce-steps">
+              <ul>
+                <li><b>Frontend Newbie:</b> 6 week duration (2 sessions/week). Class time 18h45 - 21h45 Tuesday and Saturday</li>
+                <li><b>Web Responsive:</b> Duration 5 weeks (3 sessions/week). Study time 18h45 - 21h45 on Mondays, Wednesdays and Fridays</li>
+                <li><b>ReactJs Master:</b> 6 weeks duration (3 sessions/week). Study time 18h45 - 21h45 on Mondays, Wednesdays and Fridays</li>
+                <li><b>FORM:</b> OFFLINE OR ONLINE GOOGLE MEET WITH OFFLINE CLASS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Schedule -->
+    <section class="course-schedule">
+      <h2>Schedule</h2>
+      <div class="schedule-table">
+        <div class="schedule-left">
+          <div class="schedule-row">
+            <div class="schedule-label">Opening day</div>
+            <div class="schedule-value">28/02/2023</div>
+          </div>
+          <div class="schedule-row" id="delete-border">
+            <div class="schedule-label">Time</div>
+            <div class="schedule-value" >18:45 - 21:45</div>
+          </div>
+          <div class="schedule-row schedule-address">
+            <div class="schedule-label">Address</div>
+            <div class="schedule-value">168/6 Bui Thi Xuan Street, Ward 3, Tan Binh District, Ho Chi Minh City, Vietnam</div>
+          </div>
+        </div>
+        <div class="schedule-right">
+          <div class="schedule-label">School day</div>
+          <div class="schedule-value">
+            <b>Sessions 1-12:</b> Tuesday, Saturday.<br>
+            <b>Sessions 13-48:</b> Mondays, Fridays, Fridays
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Content -->
+    <section class="course-content">
+      <h2>Content</h2>
+      <div class="content-2col">
+        <div class="content-col">
+          <div class="toggle-group">
+            <div class="toggle-item active">
+              <button class="toggle-btn" aria-expanded="true">Overview, HTML, Photoshop, Chrome Dev Tool <i class="fas fa-chevron-down"></i></button>
+              <div class="toggle-content" style="display:block;">
+                <ul>
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+            <div class="toggle-item">
+              <button class="toggle-btn" aria-expanded="false">CSS/CSS3 <i class="fas fa-chevron-down"></i></button>
+              <div class="toggle-content">
+                <ul><li>CSS basics, Flexbox, Grid, Animation</li></ul>
+              </div>
+            </div>
+            <div class="toggle-item">
+              <button class="toggle-btn" aria-expanded="false">Basic Javascript <i class="fas fa-chevron-down"></i></button>
+              <div class="toggle-content">
+                <ul><li>JS syntax, DOM, Event, AJAX</li></ul>
+              </div>
+            </div>
+            <div class="toggle-item">
+              <button class="toggle-btn" aria-expanded="false">Luxestate project report and evaluation <i class="fas fa-chevron-down"></i></button>
+              <div class="toggle-content">
+                <ul><li>Project report, teamwork, evaluation</li></ul>
+              </div>
+            </div>
+            <div class="toggle-item">
+              <button class="toggle-btn" aria-expanded="false">Advanced HTML. The BEM . Rule <i class="fas fa-chevron-down"></i></button>
+              <div class="toggle-content">
+                <ul><li>BEM, HTML5, Accessibility</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-col">
+          <div class="toggle-group">
+            <div class="toggle-item">
+              <button class="toggle-btn" aria-expanded="false">Redux and the libraries that come with redux <i class="fas fa-chevron-down"></i></button>
+              <div class="toggle-content">
+                <ul><li>Redux, Redux Toolkit, Middleware</li></ul>
+              </div>
+            </div>
+            <div class="toggle-item">
+              <button class="toggle-btn" aria-expanded="false">Optimization, other hooks, build and deploy the project <i class="fas fa-chevron-down"></i></button>
+              <div class="toggle-content">
+                <ul><li>useMemo, useCallback, build, deploy</li></ul>
+              </div>
+            </div>
+            <div class="toggle-item">
+              <button class="toggle-btn" aria-expanded="false">Practice the final project of the Shopping Cart course <i class="fas fa-chevron-down"></i></button>
+              <div class="toggle-content">
+                <ul><li>Shopping Cart project</li></ul>
+              </div>
+            </div>
+            <div class="toggle-item">
+              <button class="toggle-btn" aria-expanded="false">Project reporting and evaluation <i class="fas fa-chevron-down"></i></button>
+              <div class="toggle-content">
+                <ul><li>Project report, teamwork, evaluation</li></ul>
+              }
+            </div>
+            <div class="toggle-item">
+              <button class="toggle-btn" aria-expanded="false">Summarize and share experiences in making CVs <i class="fas fa-chevron-down"></i></button>
+              <div class="toggle-content">
+                <ul><li>CV, interview, sharing</li></ul>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Required Requirements -->
+    <section class="course-required">
+      <h2>Required requirements</h2>
+      <ul>
+        <li><i class="fa fa-check-circle"></i> <span>Have a personal laptop, install Photoshop, VSCode software</span></li>
+        <li><i class="fa fa-check-circle"></i> <span>Minimize school breaks and complete assigned assignments</span></li>
+        <li><i class="fa fa-check-circle"></i> <span>Learned about the frontend learning route and basic knowledge of HTML and CSS is an advantage</span></li>
+        <li><i class="fa fa-check-circle"></i> <span>Appscyclone members must have a high sense of responsibility and initiative in learning, as well as self-study and part-time work at home</span></li>
+      </ul>
+    </section>
+
+    <!-- Course Lecturers -->
+    <section class="course-lecturers">
+      <h2>Lecturers</h2>
+      <div class="lecturers-list">
+        <div class="lecturer-item">
+          <img src="Assets/Image/lecturer_1.png" alt="Jenny Wilson">
+          <div class="lecturer-role-badge" id="lecturer-special">Teacher</div>
+          <div class="lecturer-info">
+            <div class="lecturer-title">CEO &amp; FOUNDER</div>
+            <div class="lecturer-name">Jenny Wilson</div>
+            <p class="lecturer-desc">For more than 7 years of experience in the profession, I always create high quality, innovative, sophisticated and suitable products for domestic and foreign customers.</p>
+            <a href="https://jancooper.info/" target="_blank" rel="noopener">https://jancooper.info/</a>
+          </div>
+        </div>
+        <div class="lecturer-item">
+          <img src="Assets/Image/lecturer_2.png" alt="Jenny Wilson">
+          <div class="lecturer-role-badge">Mentor</div>
+          <div class="lecturer-info">
+            <div class="lecturer-title">CEO &amp; FOUNDER</div>
+            <div class="lecturer-name">Jenny Wilson</div>
+            <p class="lecturer-desc">I always create high quality, innovative, sophisticated and suitable products for domestic and foreign customers.</p>
+            <a href="https://jancooper.info/" target="_blank" rel="noopener">https://jancooper.info/</a>
+          </div>
+        </div>
+        <div class="lecturer-item">
+          <img src="Assets/Image/lecturer_3.png" alt="Jenny Wilson">
+          <div class="lecturer-role-badge">Mentor</div>
+          <div class="lecturer-info">
+            <div class="lecturer-title">CEO &amp; FOUNDER</div>
+            <div class="lecturer-name">Jenny Wilson</div>
+            <p class="lecturer-desc">For more than 7 years of experience in the profession, I always create high quality, innovative, sophisticated and suitable products for domestic and foreign customers.</p>
+            <a href="https://jancooper.info/" target="_blank" rel="noopener">https://jancooper.info/</a>
+          </div>
+        </div>
+        <div class="lecturer-item">
+          <img src="Assets/Image/lecturer_4.png" alt="Jenny Wilson">
+          <div class="lecturer-role-badge">Mentor</div>
+          <div class="lecturer-info">
+            <div class="lecturer-title">CEO &amp; FOUNDER</div>
+            <div class="lecturer-name">Jenny Wilson</div>
+            <p class="lecturer-desc">For more than 7 years of experience in the profession, I always create high quality, innovative, sophisticated and suitable products for domestic and foreign customers.</p>
+            <a href="https://jancooper.info/" target="_blank" rel="noopener">https://jancooper.info/</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Special Value -->
+    <section class="course-special-value" style="background-image: url('Assets/Image/background_1.png');">
+      <div class="special-value-left">
+        <h2><span class="special-green">Special Value</span><br>from Appscyclone</h2>
+      </div>
+      <div class="special-value-right">
+        <div class="special-value-item">
+          <b>Real-life training program</b>
+          <div>The learning curve at Appscyclone is straight to the point, close to the actual requirements, communicated from experienced and dedicated instructors.</div>
+        </div>
+        <div class="special-value-item">
+          <b>Companion and support 24/7</b>
+          <div>Instructors, mentors and students are a cohesive team, together supporting, connecting and helping each other throughout the learning and career development process.</div>
+        </div>
+        <div class="special-value-item">
+          <b>Put the word "Mind" in everything</b>
+          <div>The mind of the teacher, together with the enthusiasm of the learners, will be successful on the career path of each of us.</div>
+        </div>
+        <div class="special-value-item">
+          <b>Various forms of learning</b>
+          <div>Study offline or online with offline through google meet, as well as live & video courses with instructors, and mentor-supported video lessons.</div>
+        </div>
+        <div class="special-value-item">
+          <b>Join the final party</b>
+          <div>After each course, Appscyclone will hold a free end of course party to sit together and share and create cohesion for all students.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course FAQ -->
+    <section class="course-faq" style="background-image: url('Assets/Image/background_1.png');">
+      <div class="faq-left">
+        <h2>Frequently<br>Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question" aria-expanded="true">
+            Can I get a job or internship after studying at Appscyclone?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" style="display:block;">The practical course at Appscyclone helps students experience the projects, working processes and practical skills required to not only apply for an internship, but also apply for higher official positions such as in companies.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What should I do if I want to ask a question to the teacher?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">You can ask directly in class, via group chat or email to the instructor.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How to study at Appscyclone most effectively?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">Actively participate in class, do assignments fully, ask questions when you do not understand, and join the community for support.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you record a video after each lesson to review?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">Yes, all lessons are recorded and shared with students for review.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How to register for a course at Appscyclone?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">Click the Register button on the course page and fill in your information.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Recommended -->
+    <section class="course-recommend">
+      <h2>Recommended Courses</h2>
+      <div class="recommend-grid recommend-grid--courses">
+        <a href="Course-details-NodeJS.html" class="course-card">
+          <div class="course-card__top">
+            <img src="Assets/Image/NodeJS.png" alt="NodeJS" class="course-card__img-full">
+            <span class="course-card__label">Offline</span>
+          </div>
+          <div class="course-card__bottom">
+            <div>
+              <p class="course-card__tag course-card__tag--backend">BACKEND</p>
+              <h2 class="course-card__title--main">NodeJS</h2>
+              <div class="course-card__author">
+                <img src="Assets/Image/avatar.png" alt="Jane Cooper" class="course-card__avatar">
+                <span class="course-card__author-name">Jane Cooper</span>
+              </div>
+            </div>
+            <span class="course-card__price--main">4.500.000đ</span>
+          </div>
+        </a>
+        <a href="Course-details-PHP.html" class="course-card">
+          <div class="course-card__top">
+            <img src="Assets/Image/PHP.png" alt="PHP" class="course-card__img-full">
+            <span class="course-card__label">Offline</span>
+          </div>
+          <div class="course-card__bottom">
+            <div>
+              <p class="course-card__tag course-card__tag--backend">BACKEND</p>
+              <h2 class="course-card__title--main">PHP</h2>
+              <div class="course-card__author">
+                <img src="Assets/Image/avatar.png" alt="Jane Cooper" class="course-card__avatar">
+                <span class="course-card__author-name">Jane Cooper</span>
+              </div>
+            </div>
+            <span class="course-card__price--main">4.500.000đ</span>
+          </div>
+        </a>
+        <a href="Course-details-Flutter.html" class="course-card">
+          <div class="course-card__top">
+            <img src="Assets/Image/Flutter.png" alt="Flutter" class="course-card__img-full">
+            <span class="course-card__label">Offline</span>
+          </div>
+          <div class="course-card__bottom">
+            <div>
+              <p class="course-card__tag course-card__tag--mobile">MOBILE</p>
+              <h2 class="course-card__title--main">Flutter</h2>
+              <div class="course-card__author">
+                <img src="Assets/Image/avatar.png" alt="Jane Cooper" class="course-card__avatar">
+                <span class="course-card__author-name">Jane Cooper</span>
+              </div>
+            </div>
+            <span class="course-card__price--main">4.500.000đ</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__col footer__col--logo">
+        <img src="Assets/Image/logo.png" alt="Logo" class="footer__logo footer__logo--footer">
+        <h3 class="footer__heading">Wanna learn with us?</h3>
+        <p class="footer__desc">Get in touch</p>
+        <button class="footer__register">Registered</button>
+      </div>
+      <div class="footer__col footer__col--nav">
+        <h3 class="footer__nav-title">Navigation</h3>
+        <a href="index.html">Home</a>
+        <a href="Courses.html">Course</a>
+      </div>
+      <div class="footer__col footer__col--office">
+        <h3 class="footer__office-title">Head Office</h3>
+        <p class="footer__office-address">168/6 Bui Thi Xuan Street,<br>Ward 3, Tan Binh District,<br>Ho Chi Minh City, Vietnam</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="footer__social-link"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      Copyright © 2023. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="Assets/Course-details-ReactJS.js"></script>
+</body>
+</html>
